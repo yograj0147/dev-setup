@@ -24,3 +24,8 @@ Now it will start installing the applications and server
     Above command will return something like 
     "Password for the [elastic] user successfully reset.
     New value: R27lNPk*nWJ589tFm-aT"
+
+# To configure MySQL user
+1. To set root user password, run "sudo mysql -u root"
+   Now run "ALTER USER 'root'@localhost IDENTIFIED WITH mysql_native_password BY 'YOUR_NEW_PASSWORD';"
+   Then run "FLUSH PRIVILEGES;"
